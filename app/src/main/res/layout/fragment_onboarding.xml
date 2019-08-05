@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <ImageView
+            android:src="@drawable/onboarding_maket"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="32dp"
+            android:layout_width="275dp"
+            android:layout_height="374dp"/>
+
+
+    <TextView
+            android:id="@+id/onboarding_text_title"
+            android:layout_marginTop="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="@color/dark_indigo"
+            android:letterSpacing="-0.02"
+            android:layout_gravity="center_horizontal"
+            android:text="Добро пожаловать"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <TextView
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="normal"
+            android:textColor="@color/battleship_grey"
+            android:letterSpacing="-0.02"
+            android:lineSpacingExtra="6sp"
+            android:layout_gravity="center_horizontal"
+            android:text="All the rumors have finally died down and
+many skeptics have tightened their lips, the iPod does support video format now on its fifth generation."/>
+
+</LinearLayout>

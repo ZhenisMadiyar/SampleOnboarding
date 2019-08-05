@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:attrs="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager
+            android:id="@+id/onboarding_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    <FrameLayout
+            android:paddingBottom="8dp"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="56dp"
+            android:layout_width="match_parent"
+            android:clipToPadding="false"
+            android:layout_height="wrap_content">
+
+        <TextView
+                android:id="@+id/onboarding_btn_skip"
+                android:layout_gravity="start|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="#99a3b3"
+                android:text="Пропустить"/>
+
+        <android.support.v7.widget.CardView
+                android:id="@+id/onboarding_btn_next"
+                android:layout_gravity="end|center"
+                app:cardBackgroundColor="#00a9ff"
+                app:cardCornerRadius="24dp"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardElevation="4dp"
+                android:layout_width="110dp"
+                android:layout_height="48dp">
+
+            <TextView
+                    android:id="@+id/onboarding_btn_next_text"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="#ffffff"
+                    android:letterSpacing="0.04"
+                    android:textAllCaps="true"
+                    android:text="Далее"
+                    android:drawablePadding="4dp"
+                    android:drawableEnd="@drawable/arrow_forward_24_px"/>
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+            android:id="@+id/dots_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:dotsColor="#e0e6ef"
+            app:dotsCornerRadius="8dp"
+            app:dotsSize="8dp"
+            app:dotsSpacing="4dp"
+            android:padding="24dp"
+            android:layout_gravity="bottom|center_horizontal"
+            app:dotsWidthFactor="2.5"
+            app:selectedDotColor="#785ffe"
+            app:progressMode="false"
+    />
+
+</android.support.design.widget.CoordinatorLayout>
